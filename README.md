@@ -1,2 +1,2 @@
 # Functional-Programming
-Projetcs developed during my Computer Science graduation
+Projetcs developed during my Functional Programming subject during college
