@@ -1,21 +1,21 @@
 
--- Exercício 1
+-- EX.1: verify if given numbers form a triangle
 ehTriangulo x y z | x + y > z && x + z > y && y + z > x = True
                   | otherwise = False
 
---exercicio 2
+-- EX.2: classify what kind of triangle given numbers form
 tipoTriangulo x y z | x == y && y == z = "Equilatero"
                     | x == y || y == z = "isosceles"
                     | x /= y && y /= z = "escaleno"
 
---exericicio 3
+-- EX.3: now, we merge both of the previous funcions to verify wether it is or not a triangle, also classifying what kind it is
 triangulo x y z | ehTriangulo x y z = tipoTriangulo x y z
                 | otherwise  = "Nao eh"
-
+-- EX. 4: sum of all numbers up to n
+--verify if given number is even
 ehPar x
     |mod x 2 == 0 =  True
     |otherwise = False
--- exercicio 4
 somaPares 0 = 0
 somaPares n 
     |n < 2 = 0
